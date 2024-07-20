@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        /* Center the entire content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, antiquewhite, coral);
+        }
+
+        /* Style for h1 */
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        h1:hover {
+            color: #007BFF;
+            transform: scale(1.05);
+        }
+
+        /* Style for h2 */
+        h2 {
+            font-size: 1.5rem;
+            color: #555;
+            margin: 10px 0;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Underline "Predictions" header */
+        h2:first-of-type {
+            text-decoration: underline;
+        }
+
+        h2:hover {
+            color: #007BFF;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi {{name}},</h1>
+    <h2>Predictions: </h2>
+    <h2>Your age is {{age}}</h2>
+    <h2>Your gender is: {{gender}}</h2>
+</body>
+</html>
